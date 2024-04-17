@@ -1,0 +1,353 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: Calibri;
+    background-color: #f0f0f0;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.login {
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.login h1 {
+    text-align: center; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"]{
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid rgb(44, 43, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type="submit"] {
+    background-color: rgb(44, 43, 255);;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 2px solid #000;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 253);
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 80vh; /* Definindo a altura total da tela */
+    align-items: stretch; /* Esticar os elementos verticalmente */
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: flex-start; /* Alinhar os elementos à esquerda */
+}
+
+.conta_container {
+    flex: 3;
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    gap: 0;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;   
+    box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.3);
+}
+
+.conta_container .informacao {
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    flex-shrink: 0;
+    max-height: 70%;
+}
+
+.conta_container .info {
+    font-weight: bold;
+}
+
+.conta_container h2 {
+    color: black;
+}
+
+.conta_container .resto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conta_container .btn {
+    background-color: rgb(44, 43, 255);
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.conta_container .btn:hover {
+    cursor: pointer;
+    background-color: rgb(54, 93, 255);
+}
+
+.conta_container a {
+    text-decoration: none;
+}
+
+.infos {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+.infos h2 {
+    color: #000;
+    background-color: #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px; /* Espaçamento entre os .conteudo */
+    box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.2);
+}
+
+.info_container {
+    display: flex;
+    align-items: left;
+    padding: 0;
+    margin: 0;
+}
+
+.info_container-main {
+    display: flex;
+    align-items: left;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 8px; /* Espaçamento entre os .conteudo */
+    padding: 8px;
+    box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.2);
+    justify-content: stretch;
+    max-width: 20%;
+    width: 20%;
+    max-height: 63%;
+    height: 63%;
+    overflow: hidden;
+}
+
+.conteudo-main {
+    flex: 1; /* Ocupar o restante da largura da tela */
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin: 8px; /* Espaçamento entre os .conteudo */
+    padding: 8px;
+    box-shadow: 2px 4px 15px -3px rgba(0,0,0,0.2);
+    justify-content: stretch;
+}
+
+.titulo {
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.cbc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.cbc2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.cbc-inv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.cbc-inv p {
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+.conta_container span {
+    text-align: center;
+    font-weight: bold;
+}
+
+.conteudo .valor {
+    color: #9e9e9e;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.conteudo-main .valor {
+    color: #9e9e9e;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    color: #000;
+    font-weight: bolder;
+    padding-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.pg {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin-top: 10px;
+    padding: 0;
+    background-color: #f0f0f0;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+.c-progress-bar {
+    width: 100%;
+    height: 20px;
+    color: #000;
+    font-weight: bolder;
+    padding-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+    background-color: #f0f0f0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+.mostrar-cor {
+    width: 30px;
+    height: 15px;
+    color: #000;
+    font-weight: bolder;
+    padding-left: 2px;
+}
+
+.cor-veiculo {
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    border: 1px black solid;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.txt {
+    margin: 0 5px 0 5px;
+}
+
+.img_veiculo {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.titulo-v {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+@media (max-width: 868px) {
+    .conteudo {
+        max-width: 50%;
+        width: 50%;
+    }
+
+    .conteudo-main {
+        max-width: 80%;
+        width: 80%;
+    }
+
+    .infos, .info_container, .info_container-main {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .infos h2 {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .login {
+        width: 60%;
+        max-width: 60%;
+    }
+}

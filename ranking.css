@@ -1,0 +1,77 @@
+main {
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+.tabelas {
+    margin: 0;
+    margin: 0 auto;
+    padding: 7px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.tabela {
+    flex: 1;
+    max-width: 48%;
+    width: 48%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabela h2 {
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: black;
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha span {
+    flex: 1; 
+    max-width: 33%; 
+    padding: 5px 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (max-width: 868px) {
+    .tabelas {
+        flex-direction: column;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+
+    .tabela {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .linha span {
+        flex: auto;
+    }
+
+    .linha .pos {
+        max-width: 10%;
+    }
+}
